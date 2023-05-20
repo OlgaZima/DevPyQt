@@ -17,6 +17,16 @@ class MainWindow(QtWidgets.QMainWindow):
         self.horizontalLayout.addWidget(self.app2)
         self.setCentralWidget(self.centralwidget) # QMainWinow use centralwidget, а не layout
 
+# class MainWindow (QtWidgets.QWidget):
+#     def __int__(self, parent=None):
+#         super().__init__(parent)
+#         self.horizontallayout = QtWidgets.QHBoxLayout()
+#         self.appSys = WindowSys(self)
+#         self.appWeather = WindowWeather(self)
+#         self.horizontallayout.addWidget(self.appSys)
+#         self.horizontallayout.addWidget(self.appWeather)
+#         self.setLayout(self.horizontallayout)
+
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication()
